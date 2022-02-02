@@ -158,7 +158,6 @@ cd staging
 terraform init
 terraform plan --var-file=staging.tfvars -out=stagingplan
 terraform apply "stagingplan"
-terraform destroy --var-file=<corresponding_.tfvars_file>
-
+terraform destroy --var-file=staging.tfvars
 
 
